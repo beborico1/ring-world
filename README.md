@@ -13,11 +13,9 @@ A strategic board game built with Pygame featuring AI opponents and online multi
 
 ## Quick Start
 
-### Play Online
+### Play Now (Desktop - Recommended)
 
-Visit the live web version: [Your GitHub Pages URL will be here after deployment]
-
-### Run Locally
+**Download and play the full-featured desktop version with AI and online multiplayer!**
 
 1. **Install Dependencies**:
 ```bash
@@ -43,39 +41,23 @@ The game can be played directly in the browser using WebAssembly.
 
 See [WEB_DEPLOYMENT.md](WEB_DEPLOYMENT.md) for detailed instructions.
 
-## Online Multiplayer Setup
+## Online Multiplayer
 
-To enable online multiplayer, you need to deploy the WebSocket server.
+**Multiplayer server is LIVE!** ✅
 
-### Deploy Server to Railway
+The game connects to: `wss://ring-world-server.onrender.com`
 
-1. **Navigate to server directory**:
-```bash
-cd server
-```
+To play online:
+1. Run the game locally (`python -m src.main`)
+2. Select "Online" mode
+3. Enter a room code to create/join a game
+4. Share the room code with a friend!
 
-2. **Install Railway CLI**:
-```bash
-npm install -g @railway/cli
-```
+**Note**: The server sleeps after 15 min of inactivity (free tier). First connection may take 30-60 seconds to wake up.
 
-3. **Deploy**:
-```bash
-railway login
-railway init
-railway up
-```
+### Want to deploy your own server?
 
-4. **Update Client Configuration**:
-After deployment, update `src/utils/settings.py` with your server URL:
-```python
-NETWORK_CONFIG: Dict[str, Any] = {
-    "URL": "wss://your-project.up.railway.app",
-    # ...
-}
-```
-
-See [server/README.md](server/README.md) for detailed server deployment instructions.
+See [server/README.md](server/README.md) and [server/FREE_HOSTING_ALTERNATIVES.md](server/FREE_HOSTING_ALTERNATIVES.md) for deployment options.
 
 ## Project Structure
 
