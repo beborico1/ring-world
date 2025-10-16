@@ -77,7 +77,7 @@ MESSAGE_TYPES = {
 
 # Network configuration
 NETWORK_CONFIG: Dict[str, Any] = {
-    "URL": "wss://ring-world-production.up.railway.app",
+    "URL": "wss://ring-world-server.onrender.com",
     "RECONNECT_DELAY": 5,
     "MAX_RECONNECT_ATTEMPTS": 5,
     "HEARTBEAT_INTERVAL": 30,
