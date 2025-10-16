@@ -19,7 +19,7 @@ class MenuSystem:
         self.selected_game_mode = None
 
         # Load button sound
-        self.button_sound = pygame.mixer.Sound("assets/sounds/button.mp3")
+        self.button_sound = pygame.mixer.Sound("assets/sounds/button.wav")
 
         # Button colors
         self.button_color = (112, 64, 144)  # Purple color (0x704090)

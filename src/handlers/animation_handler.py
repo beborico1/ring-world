@@ -20,9 +20,9 @@ class AnimationHandler:
         )
 
         # Load sound effects
-        self.rot_start_sound = pygame.mixer.Sound("assets/sounds/rot_start.mp3")
-        self.rot_loop_sound = pygame.mixer.Sound("assets/sounds/rot.mp3")
-        self.rot_stop_sound = pygame.mixer.Sound("assets/sounds/rot_stop.mp3")
+        self.rot_start_sound = pygame.mixer.Sound("assets/sounds/rot_start.wav")
+        self.rot_loop_sound = pygame.mixer.Sound("assets/sounds/rot.wav")
+        self.rot_stop_sound = pygame.mixer.Sound("assets/sounds/rot_stop.wav")
 
         # Sound control flags
         self.is_playing_rotation = False

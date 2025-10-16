@@ -357,9 +357,9 @@ class GameUI:
 
         # Load sound effects
         self.sounds = {
-            "submit": pygame.mixer.Sound("assets/sounds/submit.mp3"),
-            "cancel": pygame.mixer.Sound("assets/sounds/cancel.mp3"),
-            "button": pygame.mixer.Sound("assets/sounds/button.mp3"),
+            "submit": pygame.mixer.Sound("assets/sounds/submit.wav"),
+            "cancel": pygame.mixer.Sound("assets/sounds/cancel.wav"),
+            "button": pygame.mixer.Sound("assets/sounds/button.wav"),
         }
 
         # Create UI elements

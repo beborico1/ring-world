@@ -12,7 +12,7 @@ import pygame
 class MoveExecutor:
     def __init__(self, circle_system):
         self.system = circle_system
-        self.placement_sound = pygame.mixer.Sound("assets/sounds/l1.mp3")
+        self.placement_sound = pygame.mixer.Sound("assets/sounds/l1.wav")
 
     def make_placement_move(self, circle, player_color):
         """Make a placement move if valid."""
