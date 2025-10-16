@@ -1,0 +1,25 @@
+# Pygbag configuration
+# Exclude files/directories from web build
+
+# Exclude AI components (TensorFlow not supported in web)
+src/ai/
+
+# Exclude server (not needed in web build)
+server/
+
+# Exclude documentation
+*.md
+!README.md
+
+# Exclude large model files
+*.keras
+*.h5
+
+# Exclude saves
+saves/
+
+# Exclude build artifacts
+build/
+dist/
+__pycache__/
+*.pyc
