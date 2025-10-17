@@ -144,7 +144,7 @@ class GameNetworkManager:
     def shutdown(self) -> None:
         """Cleanly shut down the network manager."""
         self.game_state.shutting_down = True
-        if self.connection.websocket:
-            asyncio.run(self.connection.websocket.close())
+        # Don't call asyncio.run() here - it causes deadlock with the network thread
+        # The websocket will be closed when the network thread detects shutting_down=True
         self.connection.connected = False
         self.game_state.match_found = False
